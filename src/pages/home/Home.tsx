@@ -5,6 +5,7 @@ import {
   CardPricingBlue,
   CardPricingWhite
 } from '../../components/cards/Cards'
+import { NavBar } from '../../components/navbar/NavBar'
 
 import image from '../../assets/image.png'
 import image2 from '../../assets/image2.png'
@@ -79,13 +80,14 @@ export function Home() {
 
   return (
     <>
-      <div>
+      <div id="home">
+        <NavBar />
         <img
           src={image}
-          className="w-full lg:h-[700px] h-[300px] filter brightness-90"
+          className="w-full lg:h-[780px] h-[450px] filter brightness-75"
         />
 
-        <div className="relative lg:-mt-[420px] -mt-[250px] text-white text-center lg:pl-20 lg:pr-20 pl-10 pr-10">
+        <div className="relative lg:-mt-[420px] -mt-[280px] text-white text-center lg:pl-20 lg:pr-20 pl-10 pr-10">
           <h1 className="font-extrabold lg:text-[5rem] text-2xl mb-10">
             The best products start with Figma
           </h1>
@@ -98,7 +100,7 @@ export function Home() {
       </div>
 
       <div className="lg:pl-20 lg:pr-20 pl-10 pr-10">
-        <div className="lg:mt-[370px] mt-[170px] text-center">
+        <div id="product" className="lg:mt-[370px] mt-[170px] text-center">
           <Title title="Feature" />
           <div className="mt-5">
             <Paragraph paragraph="Most calendars are designed for teams." />
@@ -213,7 +215,10 @@ export function Home() {
         </div>
       </div>
 
-      <div className="bg-[#252B42] text-center mt-32 lg:pl-20 lg:pr-20 lg:pb-40 pl-10 pr-10 pb-5">
+      <div
+        id="pricing"
+        className="bg-[#252B42] text-center mt-32 lg:pl-20 lg:pr-20 lg:pb-40 pl-10 pr-10 pb-5"
+      >
         <div className="pt-20">
           <Title title="Pricing" colorTitle="text-white" />
           <div className="mt-10">
@@ -258,7 +263,7 @@ export function Home() {
       </div>
 
       <div className="lg:pl-20 lg:pr-20 pl-10 pr-10 mt-32">
-        <div className="text-center mt-32">
+        <div id="contact" className="text-center mt-32">
           <Title title="Contact Us" />
           <div className="mt-5 mb-5">
             <Paragraph paragraph="Most calendars are designed for teams." />
