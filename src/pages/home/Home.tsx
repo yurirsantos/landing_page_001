@@ -30,6 +30,7 @@ import icon6 from '../../assets/icons/icon6.svg'
 import { Paragraph, Title } from '../../components/texts/Texts'
 import { GridTwoElements } from '../../components/grids/Grids'
 import { InputMain, TextAreaMain } from '../../components/inputs/Inputs'
+import { Footer } from '../../components/footer/Footer'
 
 export function Home() {
   const cardServices = [
@@ -232,7 +233,7 @@ export function Home() {
             />
           </div>
 
-          <div className="lg:flex lg:justify-center lg:items-center lg:gap-24 mt-20">
+          <div className="lg:flex lg:justify-center lg:items-center lg:gap-24 mt-20 w-max m-auto">
             <CardPricingWhite
               title="FREE"
               paragraph="Organize across all pps by hand"
@@ -339,6 +340,7 @@ export function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -42,7 +42,7 @@ export function NavBar() {
   const styleLiMenu =
     'hover:font-normal lg:block lg:mt-0 lg:mb-0 mt-2 mb-2 lg:p-0 p-2 text-white lg:hover:bg-transparent hover:bg-white lg:hover:text-white hover:text-black rounded-md '
 
-  const [menuHidden, setMenuHidden] = useState('block')
+  const [menuHidden, setMenuHidden] = useState('hidden')
 
   return (
     <>
